@@ -1,0 +1,46 @@
+.block {
+    position: absolute;
+    margin-top: 75px;
+    right: 87%;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+.block__left {
+    background-color: #333;
+    color: #fff;
+    padding: 100px 40px;
+    display: grid;
+    grid-template-rows: auto-1fr;
+}
+
+.block__right {
+}
+
+
+.title {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 10px;
+    margin-left: 5%;
+}
+
+.content {
+    display: grid;
+    align-content: end;
+    border-left: 2px solid #ddd;
+    padding-left: 30px;
+    margin-top: 60px;
+}
+
+.label {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+.desc {
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 1em;
+    opacity: 0.8;
+}

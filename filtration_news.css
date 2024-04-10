@@ -1,0 +1,55 @@
+.toppings {
+    position: absolute;
+    top: 4vh;
+    margin-top: 45px;
+    right: -100vh;
+    float: right;
+}
+
+.container_top {
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    height: 150px;
+}
+
+.toppings__title {
+    font-size: 2em;
+    color: #fff;
+    margin-left: 5%;
+}
+.toppings__form {
+    position: absolute;
+    right: -50%;
+}
+.toppings__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.toppings__item {
+    position: relative;
+    align-items: center;
+    display: flex;
+    right: 80%;
+}
+.toppings__btn {
+    width: 150px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #333;
+    background-color: #fff;
+    border-bottom: 2px solid #000;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.toppings__btn.active {
+    background-color: #333;
+    color: #fff;
+}
+
+.toppings__label {
+}

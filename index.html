@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tengri News Clone">
+    <meta name="keywords" content="Tengri, новости, news, статьи">
+    <meta name="author" content="Grigoriev Dmitriy">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/menu.js"></script>
+    <script src="js/paginationmain.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/toggleClick.js"></script>
+    <script src="js/filtration.js"></script>
+    <script src="js/hideBar.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <title>Tengri News Clone</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Social Media &bigtriangledown;</a> 
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Telegram</a></li>
+                        <li><a href="#">WhatsApp</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="tel: +77055530902">+77055530902</a></li>
+            </ul>
+        </nav>
+
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="">
+                        <span class="icon"></span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="">
+                        <span class="icon"></span>
+                        <span class="title">Contacts</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="">
+                        <span class="icon"></span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="">
+                        <span class="icon"></span>
+                        <span class="title">About</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="">
+                        <span class="icon"></span>
+                        <span class="title">News</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+
+        </div>
+    </header>
+
+    <div class="hero__section">
+        <li class="hide_menu" onclick="hideNews()"><a href="">&times;</a></li>
+        <ul class="hero__list">
+            <li><a href="">Новости</a></li>
+            <li><a href="">Статьи</a></li>
+            <li><a href="">Повестка дня</a></li>
+        </ul>
+        <li class="show_menu" onclick="showNews()"><a href="">&equiv;</a></li>
+    </div>
+
+
+    <!-- modal -->
+    <div class="hero open" id="my-hero">         
+        <div class="menu-opened" id="menu">
+            <div class="box">
+                <input type="checkbox" id="check">
+                <div class="search-box">
+                  <input type="text" placeholder="Type here...">
+                  <label for="check" class="icon">
+                    <img src="C:\Users\Дима\Pictures\Vector.png" alt="">
+                  </label>
+                </div>
+              </div>
+            <div class="menu-opened_projects">
+                <div class="menu-opened_projects_item">
+                    <a class="news a_hover" href=""><img src=""></a>                    
+                    <ul class="menu__list">
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Почитай</a></li>
+                        <li><a href="#">Послушай</a></li>
+                        <li><a href="#">Саморазвитие</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-opened_projects_item">
+                    <a class="guide a_hover" href=""><img src=""></a>
+                    <ul class="menu__list">
+                        <li><a href="#">Полезная информация</a></li>
+                        <li><a href="#">Где остановиться</a></li>
+                        <li><a href="#">Где поесть</a></li>
+                        <li><a href="#">Что поесть</a></li>
+                        <li><a href="#">Чем заняться</a></li>
+                        <li><a href="#">Что купить</a></li>
+                        <li><a href="#">Маршруты</a></li>
+                    </ul>
+                </div>
+                <div class="menu-opened_projects_item">
+                    <a class="" href=""><img src=""></a>
+                    <ul class="menu__list">
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Учебные заведения</a></li>
+                    </ul>
+                </div>
+                <div class="menu-opened_projects_item">
+                    <a class="news" href=""><img src=""></a>
+                    <ul class="menu__list">
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Почитай</a></li>
+                        <li><a href="#">Посмотри</a></li>
+                    </ul>
+                </div>
+    </div>
+
+
+
+
+    <section class="main swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+            <div class="slide swiper-slide">
+                <img src="C:\Users\Дима\Pictures\Токарь.jpeg" alt="" class="image" />
+                <div class="image-data">
+                    <p>
+                        Казахстанцы вновь проявили себя с<br />
+                        самой лучшей стороны - Токаев
+                    </p>
+                    <!-- <a href="#" class="button">About Us</a> -->
+                </div>
+            </div>
+            <div class="slide swiper-slide">
+                <img src="C:\Users\Дима\Pictures\court.png" alt="" class="image" />
+                <div class="image-data">
+                    <p>
+                        Что произошло в суде над <br />
+                        Бешимбаевым сегодня
+                    </p>
+                    <!-- <a href="#" class="button">About Us</a> -->
+                </div>
+            </div>
+            <div class="slide swiper-slide">
+                <img src="C:\Users\Дима\Pictures\rules.jpeg" alt="" class="image" />
+                <div class="image-data">
+                    <p>
+                        Правила выдачи кредитов <br />
+                        серьезно изменится в <br> 
+                        Казахстане: что нужно знать
+                    </p>
+                    <!-- <a href="#" class="button">About Us</a> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+
+
+    <main>
+        <div class="container container__news">
+            <!-- <section class="slider-wrapper">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="C:\Users\Дима\Pictures\Токарь.jpeg" alt="">
+                        <div class="text-overlay">Текст для первого слайда</div>
+                    </div>
+                    <div class="slide">
+                        <img src="C:\Users\Дима\Pictures\Токарь.jpeg" alt="">
+                        <div class="text-overlay">Текст для второго слайда</div>
+                    </div>
+                    <div class="slide">
+                        <img src="C:\Users\Дима\Pictures\Токарь.jpeg" alt="">
+                        <div class="text-overlay">Текст для третьего слайда</div>
+                    </div>
+                </div>
+        
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                </div>
+            </section>  -->
+
+            <section class="toppings">
+                <div class="container_top">
+                    <h2 class="toppings__title">Актуальность новостей:</h2>
+    
+                    <form action="" class="toppings__form">
+                        <ul class="toppings__list">
+                            <li class="toppings__item">
+                                <button type="button"  id="recent-btn" class="toppings__btn" onclick="toggleClick(this)">Recent</button>
+                                <label for="" class="toppings__label"></label>
+                            </li>
+                            <li class="toppings__item">
+                                <button type="button" id="5days-btn"  class="toppings__btn" onclick="toggleClick(this)">
+                                <label for="" class="toppings__label">5 days ago</label>
+                            </li>
+    
+                            <li class="toppings__item">
+                                <button type="button" id="month-btn" class="toppings__btn" onclick="toggleClick(this)">Month ago</button>
+                                <label for="" class="toppings__label"></label>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </section>
+    
+            
+
+            
+            <ul class="news-list" id="news-list">
+                <div id="pagination2" class="pagination2"></div>
+            </ul>
+
+            <section class="news_section">
+                <article class="card">
+                    <img class="logo" src="C:\Users\Дима\Pictures\Токарь.jpeg" alt="Токарь">
+
+                    <div class="card__content">
+                        <h1 class="card__title">Слово президента</h1>
+
+                        <p class="card__info">
+                            Даю поручение разбронировать<br>государственный материальный<br>резерв - Токаев
+                        </p>
+
+                        <!-- <button class="card__btn">See more</button> -->
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img class="logo" src="C:\Users\Дима\Pictures\rules.jpeg" alt="Токарь">
+
+                    <div class="card__content">
+                        <h1 class="card__title">Изменения в выдаче кредитов</h1>
+
+                        <p class="card__info">
+                            Правила выдачи кредитов<br>серьезно изменятся в<br>Казахстане: что нужно знать
+                        </p>
+
+                        <!-- <button class="card__btn">See more</button> -->
+                    </div>
+                </article>
+
+                
+            </section> 
+
+
+            <div class="container container__news">
+                <div class="posts"></div>
+                <div id="pagination" class="pagination"></div>
+            </div>
+
+
+        </div>
+    </main>
+
+    <div class="block">
+        <div class="block__left">
+            <h1 class="title">
+                Tengri
+            </h1>
+            <div class="content">
+                <div class="label">About us</div>
+                <div class="desc">
+                    Всегда только актуальные и проверенные новости из достоверных источников
+                </div>
+            </div>
+        </div>
+        <div class="block__right"></div>
+    </div>
+
+
+
+
+    <footer>
+        <div class="content">
+            <div class="top">
+                <div class="logo-details">
+                    <img src="" alt="Tengri">
+                    <!-- <span class="logo_name">Tengri</span> -->
+                </div>
+                <div class="media-icons">
+                    <a href="" class="social_links"></a>
+                    <a href="" class="social_links"></a>
+                    <a href="" class="social_links"></a>
+                    <a href="" class="social_links"></a>
+                </div>
+            </div>
+            <div class="link-boxes">
+                <ul class="box">
+                    <li class="link_name"></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Contact us</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Services</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Новости городов</li>
+                    <li><a href="#">Новости Кызылорды</a></li>
+                    <li><a href="#">Новости Костоная</a></li>
+                    <li><a href="#">Новости Караганды</a></li>
+                    <li><a href="#">Новости Атырау</a></li>
+                  </ul>
+                  <ul class="box">
+                    <li class="link_name">Новости стран</li>
+                    <li><a href="#">Новости Казахстана</a></li>
+                    <li><a href="#">Новости России</a></li>
+                    <li><a href="#">Новости США</a></li>
+                    <li><a href="#">Новости Китая</a></li>
+                  </ul>
+                  <ul class="box">
+                    <li class="link_name">Спорт</li>
+                    <li><a href="#">Теннис</a></li>
+                    <li><a href="#">Бокс</a></li>
+                    <li><a href="#">Футбол</a></li>
+                    <li><a href="#">Киберспорт</a></li>
+                  </ul>
+            </div>
+            <div class="bottom-details">
+                <div class="bottom_text">
+                  <span class="copyright_text">Copyright © 2021 <a href="#">CodingLab.</a>All rights reserved</span>
+                  <span class="policy_terms">
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Terms & condition</a>
+                  </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script>
+    window.onload = function() {
+        alert("Добро пожаловать на наш сайт!");
+    };
+</script>
+
+</body>
+</html>

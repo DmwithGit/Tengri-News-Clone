@@ -1,0 +1,92 @@
+.container__news {
+    position: relative;
+    top: -90%;
+    margin-left: 8%;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination__list {
+    display: flex;
+    list-style-type: none;
+}
+
+.pagination__item {
+    padding: 8px;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.pagination__item--active {
+    font-weight: 800;
+    color: orangered;
+}
+
+
+/* Пример стилей для цифр пагинации */
+.pagination__item {
+    background-color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: var(--dark);
+}
+
+.pagination__item--active {
+    background-color: #020202;
+    color: #fff;
+}
+
+
+
+
+
+/* Стили для статей */
+.post {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Стили для заголовка статьи */
+.post__title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Стили для изображения */
+.post__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Стили для текста статьи */
+.post__text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Стили для ссылки "Read More" */
+.post__link {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.post__link:hover {
+    background-color: #0056b3;
+}
